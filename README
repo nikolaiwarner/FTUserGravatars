@@ -1,0 +1,23 @@
+UserSystemGravatar
+==================
+
+Automatically enjoy gravatars for your UserSystem users.
+An email address is all you need!
+
+
+Install
+=======
+rake user_system_gravatar:migrate
+
+
+Example
+=======
+
+# Wow!
+= image_tag user.gravatar_url
+
+
+
+
+
+Copyright (c) 2010 Nikolai Warner, released under the MIT license
