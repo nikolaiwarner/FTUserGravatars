@@ -5,6 +5,7 @@ module UserSystem
     module UserModelMixin
 
       def self.included kls
+        kls.validates_presence_of :email
         kls.send :before_save, :hash_email
       end
 

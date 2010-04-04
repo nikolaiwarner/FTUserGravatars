@@ -11,3 +11,5 @@ namespace 'user_system_gravatar' do
   end
 
 end
+
+task :install => ['user_system_gravatar:migrate']
