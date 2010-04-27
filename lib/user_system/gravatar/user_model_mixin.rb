@@ -16,7 +16,11 @@ module UserSystem
       private
     
       def hash_email
-        self.email_md5 = Digest::MD5.hexdigest email
+        if email.blank?
+          self.email_md5 = nil
+        elsif (changes['email'] or email_md5.blank?)
+          self.email_md5 = Digest::MD5.hexdigest(email)
+        end
       end
       
     end
