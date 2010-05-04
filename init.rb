@@ -10,4 +10,4 @@ if defined?(ViewExtender)
     'dashboard/member/show/detail_list/user_system_gravatar',
     :partial => 'dashboard/member/show/detail_list'
   )
-}
+end
