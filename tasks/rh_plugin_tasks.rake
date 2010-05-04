@@ -8,7 +8,7 @@ namespace :rh do
       end
 
       desc 'runs prior to restart after enabling'
-      task :post_enable' do
+      task :post_enable do
       
         Rake::Task["user_system_gravatar:migrate"].invoke      
 
