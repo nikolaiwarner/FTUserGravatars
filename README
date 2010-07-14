@@ -1,13 +1,13 @@
-UserSystemGravatar
+FTUserGravatars
 ==================
 
-Automatically enjoy gravatars for your UserSystem users.
+Automatically enjoy gravatars for your Finethread users.
 An email address is all you need!
 
 
 Install
 =======
-rake user_system_gravatar:migrate
+rake ftusergravatars:migrate
 
 
 Example

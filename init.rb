@@ -7,7 +7,7 @@ end
   ViewExtender.register(
     'dashboard/member/show/detail_list',
     :bottom,
-    'dashboard/member/show/detail_list/user_system_gravatar',
+    'dashboard/member/show/detail_list/ftusergravatars',
     :partial => 'dashboard/member/show/detail_list'
   )
 #end

@@ -1,4 +1,4 @@
-class UserSystemGravatarMigrator < ActiveRecord::Migrator
+class FTUserGravatarsMigrator < ActiveRecord::Migrator
   def initialize direction, migrations_path, target_version=nil
     unless ActiveRecord::Base.connection.supports_migrations?
       raise StandardError.new("This database does not yet support migrations")
@@ -8,7 +8,7 @@ class UserSystemGravatarMigrator < ActiveRecord::Migrator
   end
 
   def self.schema_migrations_table_name
-    'plugin_schema_migrations_user_system_gravatar'
+    'plugin_schema_migrations_ftusergravatars'
   end
 
   private
@@ -22,7 +22,7 @@ class UserSystemGravatarMigrator < ActiveRecord::Migrator
       name,
       :version,
       :unique => true,
-      :name => "unique_schema_user_system_gravatar"
+      :name => "unique_schema_ftusergravatars"
     )
   end
 end

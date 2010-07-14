@@ -1,6 +1,6 @@
-namespace :rh do
+namespace :ft do
   namespace :plugin do
-    namespace :user_system_gravatar do   
+    namespace :ftusergravatars do   
  
       desc 'runs after downloading plugin'
       task :post_install do
@@ -10,7 +10,7 @@ namespace :rh do
       desc 'runs prior to restart after enabling'
       task :post_enable do
       
-        Rake::Task["user_system_gravatar:migrate"].invoke      
+        Rake::Task["ftusergravatars:migrate"].invoke      
 
       end
 
